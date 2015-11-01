@@ -1,0 +1,15 @@
+{
+    "name": "wixel/gump",
+    "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
+    "authors": [
+        {
+            "name": "Taylor Hawkes",
+            "homepage": "http://taylor.woodstitch.com"
+        }    
+    ],
+    "license": "MIT",
+    "homepage": "http://taylor.woodstitch.com/",
+    "autoload": {
+        "files": ["EasyConnect.php"]
+    }
+}
