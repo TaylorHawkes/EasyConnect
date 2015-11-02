@@ -1,7 +1,7 @@
 <?php
 
 class EasyConnect 
-
+{
     
     //defaulting to dev
     protected static $hostname;
@@ -44,7 +44,7 @@ class EasyConnect
     { 
         if (!self::$instance) 
         { 
-        self::$instance = new Connection($db_name); 
+        self::$instance = new EasyConnect($db_name); 
         } 
 
         return self::$instance; 
