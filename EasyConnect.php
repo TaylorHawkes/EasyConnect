@@ -15,7 +15,7 @@ class EasyConnect
         
      
         self::$hostname=$hostname;
-        self::$username=$hostname;
+        self::$username=$username;
         self::$password=$password;
         self::$db_name=$db_name;
          
@@ -28,10 +28,10 @@ class EasyConnect
         
         if($db_name){
             $selected_db =  mysqli_select_db(self::$conn,$db_name);
+            if(!$selected_db){
+                die('Cant select database');
+            }   
         }
-        if(!$selected_db){
-            die('Cant select database');
-        }   
     } 
 
 
@@ -40,11 +40,11 @@ class EasyConnect
     {
     } 
 
-    public static function getInstance($db_name=null) 
+    public static function getInstance($hostname,$username,$password,$db_name=null) 
     { 
         if (!self::$instance) 
         { 
-        self::$instance = new EasyConnect($db_name); 
+        self::$instance = new EasyConnect($hostname,$username,$password,$db_name); 
         } 
 
         return self::$instance; 
