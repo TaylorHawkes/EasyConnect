@@ -1,6 +1,6 @@
 {
-    "name": "wixel/gump",
-    "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
+    "name": "TaylorHawkes/EasyConnect",
+    "description": "Few simple methods for connecting to mysql db",
     "authors": [
         {
             "name": "Taylor Hawkes",
